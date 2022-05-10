@@ -40,6 +40,7 @@ INSTALLED_APPS = [
 
     'rest_framework',
     'apps.blog.apps.BlogConfig',
+    'apps.api.apps.ApiConfig',
 ]
 
 MIDDLEWARE = [

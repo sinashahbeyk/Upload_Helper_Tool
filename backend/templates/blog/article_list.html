@@ -1,12 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+{% extends 'base.html' %}
+{% block title %}{% endblock title %}
+
+{% block content %}
     {% for article in article_list%}
         <article>
             <h2>{{article.title}}</h2>
@@ -18,5 +13,4 @@
     {% empty %}
         <p>There's no article published yet</p>
     {% endfor %}
-</body>
-</html>
+{% endblock content %}
